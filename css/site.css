@@ -1,0 +1,78 @@
+/*
+  SITE WIDE THEME
+  ADD TO ALL FILES
+*/
+
+body {
+  font-size: 18px;
+  color: #C5C6C7;
+  background-color: #0B0C10;
+  text-align: center;
+}
+
+h1 {
+  color: #66FCF1
+}
+
+.header {
+  color: #66FCF1
+}
+
+/* Custom overrides to bootstrap */
+.bg-dark {
+  background-color: #1F2833
+}
+
+.bg-info {
+  background-color: #66FCF1 !important;
+  color: #343a41;
+}
+
+.text-white {
+  color: #C5C6C7 !important
+}
+
+/* Modal Overrides */
+.modal-header {
+  border: none;
+}
+
+.modal-footer {
+  border: none;
+}
+
+/* Button Overrides */
+
+.btn.btn-primary {
+  background-color: #45A29E;
+  color: #1F2833;
+  border: none;
+}
+
+.btn.btn-primary:hover {
+  background-color: #66FCF1;
+  border: none;
+}
+
+.btn.btn-dark {
+  background-color: #343a41;
+  color: #C5C6C7;
+  border: none;
+}
+
+.btn.btn-dark:hover {
+  background-color: #45A29E;
+  border: none;
+}
+
+.btn.btn-outline-primary {
+  color: #45A29E;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #45A29E;
+}
+
+.btn.btn-outline-primary:hover {
+  color: #C5C6C7;
+  background-color: #45A29E;
+}

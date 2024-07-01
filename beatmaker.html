@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="./lib/jquery-3.6.0.js"></script>
+    <link type="text/css" rel="stylesheet" href="./lib/bootstrap-5.1.1/css/bootstrap.min.css" />
+    <script src="./lib/bootstrap-5.1.1/js/bootstrap.bundle.min.js"></script>
+    <link type="text/css" href="./lib/fontawesome/css/all.min.css" rel="stylesheet">
+    <script src='./js/beatmaker.js'></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Beat Maker</title>
+
+    <link type="text/css" rel="other stylesheet" href="./css/beatmaker.css">
+    <link type="text/css" rel="other stylesheet" href="./css/site.css">
+</head>
+
+<body>
+    <!-- NAV BAR -->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">BeatMaker</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="studio" href="./beatmaker.html">Studio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./profile.html">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./explore.html">Explore</a>
+                    </li>
+                </ul>
+                <ul class='navbar-nav justify-content-end w-100'>
+                    <li class="nav-item align-self-end">
+                        <input type='submit' id='logout-btn' class='btn btn-dark nav-link' value='Logout'>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <!-- Success Toast -->
+        <div class="position-fixed top-3 end-0 p-3" style="z-index: 11">
+            <div id='toast' class="toast align-items-center bg-success" role="alert" aria-live="assertive"
+                aria-atomic="true">
+                <div class="d-flex">
+                    <div class="toast-body">
+                        Beat successfully saved!
+                    </div>
+                    <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast"
+                        aria-label="Close"></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="saveModal" data-bs-backdrop="false" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="saveModalLabel" aria-hidden="true">
+            <div class="modal-dialog bg-dark">
+                <div class="modal-content bg-dark">
+                    <div class="modal-header bg-dark text-white">
+                        <h4 class="modal-title" id="saveModalLabel">Save Beat</h4>
+                        <button type="button" class="btn-close text-white" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body bg-dark">
+                        <div class="row justify-content-center">
+                            We'll save this beat to your profile so you can edit it later!
+                        </div>
+                        <div class="row">
+                            <div class="mb-3 mt-3 text-start">
+                                <label for="titleInput1" class="form-label">Title</label>
+                                <input type="text" placeholder="Beat Beat the Beat" class="form-control"
+                                    id="titleInput1">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer bg-dark">
+                        <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Cancel</button>
+                        <button id="save" type="button" class="btn btn-primary">Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row header p-1 mt-4 mb-4 justify-content-center">
+            <div class="col-4">
+                <h2>Beat Beat the Beat</h2>
+            </div>
+        </div>
+        <div id="workspace">
+
+        </div>
+        <div class="row justify-content-end align-items-center bg-dark p-4">
+            <div class="col-4">
+                <div class="card border-secondary bg-dark">
+                    <div class="card-header">
+                        Controls
+                    </div>
+                    <div class="card-body">
+                        <div class="row gy-2 mb-2 justify-content-center align-items-center">
+                            <div class="col-3">
+                                <a id="saveBtn" alt="save" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#saveModal" data-toggle="tooltip" data-placement="top"
+                                    title="Save"><i class="fas fa-save"></i></a>
+                            </div>
+                            <div class="col-3">
+                                <a id="play" alt="play" class="btn btn-primary" data-toggle="tooltip"
+                                    data-placement="top" title="Play"><i class="fas fa-play"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <div class="col-md-4 d-flex align-items-center">
+            <span class="text-muted">v1.0-beta | © 2021 BeatMaker Inc.</span>
+        </div>
+    </footer>
+
+</body>
+
+</html>

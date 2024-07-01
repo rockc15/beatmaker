@@ -1,0 +1,23 @@
+#particles {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 50% 50%;
+    background-color: #0b0c10;
+}
+
+ul#menu {
+    list-style-type: none;
+    background-color: powderblue;
+}
+  
+ul#menu li a {
+  text-decoration: none; 
+  font-size: 300%;
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<link type="text/css" rel="stylesheet" href="./lib/bootstrap-5.1.1/css/bootstrap.min.css" />
+<link type="text/css" href="./lib/fontawesome/css/all.min.css" rel="stylesheet">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+<title>BeatMaker | Profile</title>
+
+<link type="text/css" rel="stylesheet" href="./css/profile.css" />
+<link type="text/css" rel="stylesheet" href="./css/site.css" />
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">BeatMaker</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="./beatmaker.html">Studio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="./profile.html">Profile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./explore.html">Explore</a>
+          </li>
+        </ul>
+        <ul class='navbar-nav justify-content-end w-100'>
+          <li class="nav-item align-self-end">
+            <a class="nav-link" href="./index.html">Logout</a>
+          </li>
+        </ul>
+      </div>
+  </nav>
+
+  <div class="container h-100 text-start">
+    <div class="row justify-content-center">
+      <div class="col-4">
+        <div style="width: 250px; height: 250px" class="bg-primary"></div>
+      </div>
+
+      <div class="col-6 align-items-start">
+        <h1 class="display-1">Jaydon Reap</h1>
+        <h2 class="lead"><i>Legendary Level Beat Maker</i></h2>
+        <br />
+
+        <p>This is my super cool bio/description/ blurb about what the heck I do</p>
+      </div>
+    </div>
+
+    <div class="col mt-4">
+      <div class="row justify-content-start">
+        <p class="display-5 header">Your Beats</p>
+        <hr class="w-25" />
+      </div>
+
+      <div class="row mt-4">
+        <div class="col-4">
+          <div class="card p-2 bg-dark">
+            <div class="card-header">
+              Beat Beat the Beat
+            </div>
+            <div class="card-body">
+              An awesome epic beat description!
+            </div>
+            <div class="card-footer">
+              <button class="btn btn-primary">Edit Beat</button>
+              <button class="btn btn-outline-danger">Delete Beat</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <a class="card-link" href='./beatmaker.html'>
+            <div class="card card-btn text-white h-100 p-2 bg-dark">
+              <div class="row h-100 justify-content-center align-content-center">
+                <div class="col text-center">
+                  <i class="fas fa-plus fa-2x mb-2"></i>
+                  <p class="lead">New Beat</p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <script src="./lib/jquery-3.6.0.js"></script>
+  <script src="./lib/bootstrap-5.1.1/js/bootstrap.min.js"></script>
+
+  <script src="./js/profile.js"></script>
+</body>
+
+</html>

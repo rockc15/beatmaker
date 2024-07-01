@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="./lib/jquery-3.6.0.js"></script>
+<link type="text/css" rel="stylesheet" href="./lib/bootstrap-5.1.1/css/bootstrap.min.css" />
+<link type="text/css" rel="stylesheet" href="./css/createNewAccount.css">
+<link type="text/css" rel="stylesheet" href="./css/site.css">
+<script src="./lib/particles.min.js"></script>
+<script src="./js/createNewAccount.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Beat Maker</title>
+</head>
+
+<body>
+    <div id="particles">
+        <div class="container-fluid h-100 position-absolute">
+            <div class="row justify-content-center align-items-center h-100">
+                <div class="col-5">
+                    <h1 class="display-1" id="title">Beat Maker</h1>
+                    <div class="card bg-dark">
+                        <div class="card-body">
+                            <h2 class="display-1" id="login-box-header"> Create Account</h2>
+                            <form id='nameform'>
+                                <div class='form-group display-1'>
+                                    <input class="form-control" id="name-input" placeholder="Name" type='text'
+                                        class='form-control' required>
+                                </div>
+                                <div class='form-group display-1'>
+                                    <input class="form-control" id="email-input" placeholder="Email" type='email'
+                                        class='form-control' required>
+                                </div>
+                                <div class='form-group display-1'>
+                                    <input class="form-control" id="password-input" placeholder="Password"
+                                        type='password' class='form-control' required>
+                                </div>
+                                <input type='submit' id='submit-btn' class='btn btn-dark w-50 mt-2'
+                                    value='Create Account'>
+                            </form>
+                            <a class="btn btn-outline-primary w-50 m-2" href="index.html" id="create-new-account">Back
+                                to Login</a>
+                        </div>
+                    </div>
+                    <div id="liveAlertPlaceholder"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>particlesJS.load('particles', './assets/particlesjs-config.json');</script>
+
+</html>

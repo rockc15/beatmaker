@@ -1,0 +1,114 @@
+.row.track div.col {
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+    height: 50px;
+    width: 50px;
+    margin: 5px;
+    border-radius: 5px;
+    padding: 0px;
+}
+
+.row.track {
+    height: 100%;
+    padding: 10px;
+}
+
+.col.guitar {
+    background-color: #C77FF4;
+}
+
+.col.synth {
+    background-color: #70C4C1;
+}
+
+.col.piano {
+    background-color: #728DEE;
+}
+
+.col.bass {
+    background-color: #F48875;
+}
+
+.col.drum {
+    background-color: #81ECA3;
+}
+
+.col.horn {
+    background-color: #42ABC5;
+}
+
+
+.row.track.guitar div.selector:hover {
+    background-color: #C77FF4;
+}
+
+.row.track.synth div.selector:hover {
+    background-color: #70C4C1;
+}
+
+.row.track.piano div.selector:hover {
+    background-color: #728DEE;
+}
+
+.row.track.bass div.selector:hover {
+    background-color: #F48875;
+}
+
+.row.track.drum div.selector:hover {
+    background-color: #81ECA3;
+}
+
+.row.track.horn div.selector:hover {
+    background-color: #42ABC5;
+}
+
+.selector {
+    text-decoration: none;
+    font-size: 15px;
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    color: white;
+}
+
+.marker {
+    text-decoration: none;
+    font-size: 15px;
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    color: white;
+}
+
+.marker a {
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+}
+
+.selector:hover {
+    background-color: #EBFF99;
+}
+
+/* Bootstrap Overrides */
+.card-header {
+    background-color: grey;
+}
+
+.beat-pad-btn-row-1 button {
+    background-color: #70C4C1;
+}
+
+.beat-pad-btn-row-2 button {
+    background-color: #EBFF99;
+  
+}
+
+.beat-pad-btn-row-3 button {
+    background-color: #A9C4EB;
+}
+
+.beat-pad-btn-row-4 button {
+    background-color: #FF99FF;
+}

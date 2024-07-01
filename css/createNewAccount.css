@@ -1,0 +1,28 @@
+#particles {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 50% 50%;
+  background-color: #0b0c10;
+}
+
+#login-box-header {
+  color: #66fcf2;
+  font-size: 3rem;
+}
+
+#title {
+  font-size: 7rem;
+  color: #66fcf2;
+}
+
+.form-group {
+  padding: 3%;
+  font-size: 2.5rem;
+}

@@ -1,0 +1,22 @@
+.card-link {
+  text-decoration: none;
+  color: #C5C6C7
+}
+
+.card-btn:hover {
+  background-color: #4e4e4e !important;
+}
+
+#particles {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 50% 50%;
+  background-color: #0b0c10;
+}
